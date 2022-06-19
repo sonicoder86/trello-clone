@@ -1,0 +1,129 @@
+// home page board styles
+
+.board-section-title { 
+  font-size: $board-section-title-font-size;
+  font-weight: bold;
+  vertical-align: middle;
+  color: #172b4d;
+}
+
+.board-display {
+  height: $board-display-height;
+  font-weight: bold;
+  border: none;
+
+  &:hover .star-white {
+    opacity: 1;
+  }
+};
+
+.board-display-title {
+  font-size: $board-display-title-font-size;
+  vertical-align: text-top;
+  text-align: left;
+  height: 100%;
+  overflow: hidden;
+}
+
+.board-display-star {
+  font-size: $board-display-star-font-size;
+  transition: font-size 0.2s;
+  &:hover {
+    font-size: $board-display-star-font-size * 1.25;
+  }
+}
+
+.star-white {
+  opacity: 0;
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+
+.star-yellow {
+  color: yellow;
+  &:hover {
+    color: yellow;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .board-display {
+    width: $board-display-width;
+  }
+
+  .board-display-container {
+    width: $board-display-container-width;
+  }
+}
+
+// create board modal
+.board-title-input {
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: $board-modal-title-font-size;
+  background-color: transparent;
+  &:focus {
+    color: white;
+    background-color: rgba(255,255,255,0.3);
+  }
+  &::placeholder {
+    color: white;
+  }
+}
+
+.board-display-preview {
+  width: 100%;
+  height: $board-display-height;
+}
+
+.board-create-modal-bg {
+  border: none;
+}
+
+
+// board color selection
+.board-color-option {
+  cursor: pointer;
+  display: block;
+  border-radius: 5px;
+  border: $board-color-border-size solid white;
+  width: $board-color-size;
+  height: $board-color-size;
+  position: relative;
+}
+
+.board-color-input {
+  display: none;
+}
+
+.color-check-icon { 
+  font-size: $board-color-size *0.9
+}
+// board page styles
+
+.board-header-title { 
+  font-size: $board-header-title-font-size;
+  color: white;
+  margin-bottom: 0;
+}
+
+.board-header-icon {
+  font-size: $board-header-icon-font-size;
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.board-header-star {
+  color: yellow;
+  background-color: rgba(0,0,0,0.1);
+
+  &:hover {
+    color: yellow;
+  }
+}
