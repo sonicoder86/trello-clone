@@ -1,0 +1,29 @@
+@import 'bootstrap/scss/bootstrap';
+@import './styles/constants';
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body,
+html,
+#app{
+  height: 100%;
+  width: 100%;
+}
+
+#content {
+  flex: 1 0 auto;
+  position: relative;
+}
+
+.header {
+  font-size: $header-font-size;
+  white-space: nowrap;
+}
+
+.footer {
+  font-size: $footer-font-size;
+  color: white;
+  & a {
+    text-decoration: underline;
+  }
+}

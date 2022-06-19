@@ -4,7 +4,9 @@
   <div>Hello World</div>
 </template>
 
-<style>
+<style lang="scss">
+@import './app.scss';
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
