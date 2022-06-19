@@ -1,5 +1,5 @@
-import Modal from './Modal.vue';
-import Toolbar from './Toolbar.vue';
-import Grid from './Grid.vue';
+import AppHeader from './AppHeader.vue';
+import AppFooter from './AppFooter.vue';
+import Board from './Board.vue';
 
-export { Modal, Toolbar, Grid };
+export { AppHeader, AppFooter, Board };
